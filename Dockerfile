@@ -1,7 +1,7 @@
 From groovy:latest AS groovy
 COPY README.md home/
 RUN groovy --version
-RUN find groovy
+RUN find groovysh .
 RUN ls -ltr home/
 RUN ls -ltr /
 
