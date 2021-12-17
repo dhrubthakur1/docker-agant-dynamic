@@ -1,7 +1,6 @@
 From groovy:latest AS groovy
 COPY README.md home/
 RUN groovy --version
-//RUN grep -ril groovysh .
 RUN ls -ltr home/
 RUN ls -altr /
 
