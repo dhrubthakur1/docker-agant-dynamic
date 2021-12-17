@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'groovy --version'      
                 sh 'grep -ril groovysh .'
-                sh 'ls -latr home/'
+                sh 'pwd'
                 sh 'ls -latr /'
                 //sh 'node --version'
                 //sh 'svn --version'
