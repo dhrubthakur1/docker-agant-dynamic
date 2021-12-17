@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                //sh 'groovy --version'          
-                sh 'node --version'
-                sh 'svn --version'
+                sh 'groovy --version'      
+                sh 'grep -ril groovysh .'
+                sh 'locate groovy'
+                //sh 'node --version'
+                //sh 'svn --version'
             }
         }
     }
