@@ -1,9 +1,9 @@
 From groovy:latest AS groovy
 COPY README.md home/
 RUN groovy --version
-RUN find groovysh .
+RUN grep -ril groovysh .
 RUN ls -ltr home/
-RUN ls -ltr /
+RUN ls -altr /
 
 
 FROM node:16.13.1-alpine
